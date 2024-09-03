@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Custom styles for this page -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+</head>
+<body style="background-color: white;">
+ <div>
+  <div style="margin-top: 70px; background-color: red; height: 120px;">
+    <h3 style="text-align: center; font-size: 3em; color: white; padding-top: 25px;">Welcome to Fashion Point</h3>
+  </div>
+
+  <div style="background-color: white;">
+    <hr style="width: 100%; border-color: white; border-width: 4px; color: gray;">
+    <ul class="nav nav-pills justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="addproduct.html">Add Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ShowProduct">View Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="VUser">View Users</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Vorders">View Orders</a>
+      </li>
+    </ul>
+  </div>   
+
+  <hr style="border: 2px solid red; ">
+
+
+  <section class="why why_section layout_padding" style="background-color: white;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="full">
+            <form action="AddProduct" method="post" enctype="multipart/form-data">
+              <fieldset>
+  <input type="file" name="image" accept="image/*" required>
+
+                <input type="text" placeholder="enter Add product id" name="id">
+                <input type="text" placeholder="enter product name" name="name">
+                <input type="text" placeholder="enter product category" name="category">
+                <input type="text" placeholder="enter product price" name="price">
+                <input type="text" placeholder="enter product description" name="description">
+                  <input type="submit" value="Add" class="btn btn-primary">
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ </div>
+ <footer class="footer_section">
+  <div class="container">
+     <div class="row">
+        <div class="col-md-4 footer-col">
+           <div class="footer_contact">
+              <h4>
+                 Reach at..
+              </h4>
+              <div class="contact_link_box">
+                 <a href="">
+                 <i class="fa fa-map-marker" aria-hidden="true"></i>
+                 <span>
+                 Location
+                 </span>
+                 </a>
+                 <a href="">
+                 <i class="fa fa-phone" aria-hidden="true"></i>
+                 <span>
+                 Call  +91 8864870550
+                 </span>
+                 </a>
+                 <a href="">
+                 <i class="fa fa-envelope" aria-hidden="true"></i>
+                 <span>
+                  shalnisharmagbn@gmail.com
+                  </span>
+                 </a>
+              </div>
+           </div>
+        </div>
+        <div class="col-md-4 footer-col">
+           <div class="footer_detail">
+              <a href="index.html" class="footer-logo">
+              Fashion point
+              </a>
+              <p>
+                Discover your new favorite outfit today at fashion point. Sign up for our newsletter to receive the latest updates, exclusive offers, and more. Happy shopping!h
+              </p>
+              <div class="footer_social">
+                 <a href="">
+                 <i class="fa fa-facebook" aria-hidden="true"></i>
+                 </a>
+                 <a href="">
+                 <i class="fa fa-twitter" aria-hidden="true"></i>
+                 </a>
+                 <a href="">
+                 <i class="fa fa-linkedin" aria-hidden="true"></i>
+                 </a>
+                 <a href="">
+                 <i class="fa fa-instagram" aria-hidden="true"></i>
+                 </a>
+                 <a href="">
+                 <i class="fa fa-pinterest" aria-hidden="true"></i>
+                 </a>
+              </div>
+           </div>
+        </div>
+        <div class="col-md-4 footer-col">
+           <div class="map_container">
+              <div class="map">
+                 <div id="googleMap"></div>
+              </div>
+           </div>
+        </div>
+     </div>
+     <div class="footer-info">
+        <div class="col-lg-7 mx-auto px-0">
+           <p>
+              &copy; <span id="displayYear"></span> All Rights Reserved By 
+              <a href="https://html.design/">fashion point</a><br>
+  
+             
+           </p>
+        </div>
+     </div>
+  </div>
+</footer>
+<!-- footer section -->
+<!-- jQery -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<!-- popper js -->
+<script src="js/popper.min.js"></script>
+<!-- bootstrap js -->
+<script src="js/bootstrap.js"></script>
+<!-- custom js -->
+<script src="js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+</head>
+<body>
+    <script>
+        var a=document.getElementById("n1").value;
+        var b=document.getElementById("e1").value;
+        var b=document.getElementById("c1").value;
+        var b=document.getElementById("p1").value;
+
+        if(a==""||b==""||c==""||d=="")
+        {
+            alert("all feild are mandatory");
+            return false;
+
+        }else if(b.length>10||b.length<10){
+            alert("number should be of 10 digit!please enter valid no");
+            return false;
+        }
+        else if(isNaN(b)){
+            alert("only numbers are allwoed!please enter valid no");
+            return false;
+        }
+        else if(c!=d){
+            alert("please enter valid password");
+            return false;
+        }else{
+            true;
+        }
+        
+    </script>
+</body>
+</html>
